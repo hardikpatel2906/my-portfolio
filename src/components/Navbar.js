@@ -1,10 +1,10 @@
 const Navbar = () => {
     const navigation = [
-        { name: 'Home', href: '#', current: true },
+        { name: 'Home', href: '/', current: true },
         { name: 'Experience', href: '#', current: false },
-        { name: 'Technology', href: '#', current: false },
+        { name: 'Technology', href: '/technology', current: false },
         { name: 'Project', href: '#', current: false },
-        { name: 'Education', href: '#', current: false },
+        { name: 'Education', href: '/education', current: false },
     ];
 
     function classNames(...classes) {
