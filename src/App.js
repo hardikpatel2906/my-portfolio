@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Technology from './components/Technology';
 import Education from './components/Education';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Project from './components/Project';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/technology" element={<Technology />} />
             <Route path="/education" element={<Education />} />
+            <Route path="/project" element={<Project />} />
           </Routes>
         </div>
         <Footer />
