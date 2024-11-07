@@ -3,7 +3,7 @@ const Home = () => {
         <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-10 flex justify-between">
             <div className="text-left">
                 <p className="mt-6 text-lg leading-8 font-semibold text-[#000000] text-justify font-Jost">Hey, I'm </p>
-                <p className='tracking-tight text-[#000000] text-7xl font-Jost'>Hardik Patel</p>
+                <p className='tracking-tight font-bold text-[#000000] text-8xl font-Jost'>Hardik Patel</p>
                 <p className="mt-6 leading-snug font-semibold text-6xl text-[#000000] font-Jost text-justify">I'm a dedicated full-stack developer with a passion for crafting dynamic and efficient web applications.</p> 
                     {/* Currently, I focus on building responsive, user-friendly interfaces and robust backend systems, always aiming to deliver high-quality software solutions.</p> */}
                 {/* <p className="mt-6 text-lg leading-8 font-semibold text-[#000000] text-justify">
@@ -13,7 +13,14 @@ const Home = () => {
                     I have a strong foundation in technologies like Node.js, React.js, JavaScript, and frameworks like Express.js and Sails. Additionally, I’m skilled in working with databases such as MongoDB, PostgreSQL, and MySQL. My expertise extends to REST API development and API testing, ensuring that the applications I build are not only functional but also reliable and efficient.
                 </p> */}
             </div>
-            <div>Hello</div>
+            <div>
+            <div className="flex items-center justify-center lg:flex-1 lg:order-2 lg:justify-end">
+                <img src="./assets/Blue-Shape.svg" alt="1st" className="-rotate-45 h-64 md:h-72 lg:h-[400px]" />
+                <img src="./assets/Pink-Shape.svg" alt="2st" className="absolute -rotate-[30deg] h-64 md:h-72 lg:h-[400px]" />
+                <img src="./assets/Purple-Shape.svg" alt="3st" className="absolute -rotate-[15deg] h-64 md:h-72 lg:h-[400px]" />
+                <img src="./assets/Hero-Model.png" alt="Hero" className="absolute h-64 md:h-72 lg:h-[400px]" />
+            </div>
+            </div>
         </div>
     )
 };
