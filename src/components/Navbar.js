@@ -12,7 +12,8 @@ const Navbar = () => {
     }
 
     return (
-        <div className="flex justify-center p-4 bg-[#7c98a2]">
+        <div className="flex justify-between p-4 bg-[#ffffff]">
+            <div><p className="font-Jost font-bold">Hardik Patel</p></div>
             <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -21,8 +22,8 @@ const Navbar = () => {
                             href={item.href}
                             aria-current={item.current ? 'page' : undefined}
                             className={classNames(
-                                item.current ? 'text-[#000000] bg-[#ff834f]' : 'text-[#f8f7e5] hover:text-[#4F4A41] hover:bg-[#ff834f]',
-                                'rounded-full px-3 py-2 text-sm font-medium',
+                                item.current ? 'text-[#000000] bg-[#fead8a]' : 'text-[#000000] hover:text-[#4F4A41] hover:bg-[#ff834f]',
+                                'rounded-full px-3 py-2 text-sm font-medium font-Jost',
                             )}
                         >
                             {item.name}
@@ -30,6 +31,7 @@ const Navbar = () => {
                     ))}
                 </div>
             </div>
+            <div><p className="font-Jost">h.patel290695@gmail.com</p></div>
         </div>
     )
 };

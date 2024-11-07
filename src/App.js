@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen bg-noise" >
         <Navbar />
-        <div className='flex-grow p-6 bg-[#7c98a2]  bg-noise bg-noise-pattern bg-opacity'>
+        <div className='flex-grow p-6 bg-[#ffffff]'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/technology" element={<Technology />} />
@@ -20,7 +20,7 @@ function App() {
             <Route path="/project" element={<Project />} />
           </Routes>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
