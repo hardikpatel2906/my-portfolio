@@ -11,11 +11,11 @@ const Technology = () => {
         },
         {
             type: "Frameworks",
-            technologies: ["ReactJS", "NodeJS", "ExpressJS"]
+            technologies: ["ReactJS", "NextJS","NodeJS", "ExpressJS"]
         },
         {
             type: "Databases",
-            technologies: ["MongoDB", "MySQL", "PostgreSQL"]
+            technologies: ["MongoDB", "MySQL", "PostgreSQL", "Firebase"]
         }
     ];
 
