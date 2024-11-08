@@ -3,7 +3,7 @@ const Home = () => {
         <div class="mx-auto max-w-6xl flex justify-between">
             <div className="max-w-2xl">
                 <p className="mt-6 text-lg leading-8 font-semibold text-[#000000] text-justify font-Jost">Hey, I'm </p>
-                <p className="font-bold text-[#000000] text-8xl font-Jost">Hardik Patel</p>
+                <p className="text-[#000000] text-8xl font-Jost">Hardik Patel</p>
                 <p className="mt-6 leading-snug font-semibold text-5xl text-[#000000] font-Jost text-left">A dedicated full-stack developer with a passion for crafting dynamic and efficient web applications.</p>
             <button className="bg-black rounded-full text-white p-5 font-Jost font-bold mt-10 text-lg">Get in touch</button>
             </div>
