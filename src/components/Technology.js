@@ -11,7 +11,7 @@ const Technology = () => {
         },
         {
             type: "Frameworks",
-            technologies: ["ReactJS", "NextJS","NodeJS", "ExpressJS"]
+            technologies: ["ReactJS", "NextJS", "NodeJS", "ExpressJS"]
         },
         {
             type: "Databases",
@@ -22,16 +22,18 @@ const Technology = () => {
 
     return (
         <>
-            <h1>Tools & Technology</h1>
-            {techDatas.map((techData) => (
-                <>
-                    <p>{techData.type}:</p>
-                    <div className="flex gap-2">
-                        {techData.technologies.map((tech) => (<span><button className="bg-gray-600 text-white rounded-lg px-2 py-1 font-bold">{tech}</button></span>))}
-                    </div>
+            <div className="mx-auto max-w-6xl mt-6">
+                <h1 className="font-Jost text-5xl">Tools & Technology</h1>
+                {techDatas.map((techData) => (
+                    <>
+                        <p className="mt-4 font-Jost text-2xl font-semibold">{techData.type}:</p>
+                        <div className="flex gap-3 ">
+                            {techData.technologies.map((tech) => (<span><button className="bg-gray-600 text-white rounded-full px-4 py-2 font-bold font-Jost">{tech}</button></span>))}
+                        </div>
 
-                </>
-            ))}
+                    </>
+                ))}
+            </div>
         </>
     )
 };
