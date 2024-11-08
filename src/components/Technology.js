@@ -3,11 +3,11 @@ const Technology = () => {
     const techDatas = [
         {
             type: "Core",
-            technologies: ["Full-Stack", "Software Engineering", "Database"]
+            technologies: ["Full-Stack Developer", "Software Engineering", "Back-end Development","Front-end Development", "Database"]
         },
         {
             type: "Languages",
-            technologies: ["Javascript", "Python"]
+            technologies: ["Javascript", "Python", "HTML","CSS","SQL"]
         },
         {
             type: "Frameworks",
