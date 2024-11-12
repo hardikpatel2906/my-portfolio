@@ -7,7 +7,7 @@ const Technology = () => {
         },
         {
             type: "Languages",
-            technologies: ["Javascript", "Python", "HTML","CSS","SQL"]
+            technologies: ["Javascript", "Python", "HTML","CSS","SQL", "TailwindCSS"]
         },
         {
             type: "Frameworks",
@@ -27,7 +27,7 @@ const Technology = () => {
                 {techDatas.map((techData) => (
                     <>
                         <p className="mt-4 font-Jost text-2xl">{techData.type}:</p>
-                        <div className="flex gap-3 ">
+                        <div className="flex gap-3 mt-2">
                             {techData.technologies.map((tech) => (<span><button className="bg-gray-700 text-white rounded-full px-4 py-2 text-lg font-Jost">{tech}</button></span>))}
                         </div>
 

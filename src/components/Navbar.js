@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <div className="flex justify-between p-4 bg-[#ffffff]">
-            <div><p className="font-Jost text-2xl tracking-widest">Hardik Patel</p></div>
+            <div><p className="font-Jost text-xl tracking-widest">Hardik Patel</p></div>
             <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
                     {navigation.map((item) => (
