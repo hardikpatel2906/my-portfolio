@@ -9,10 +9,10 @@ const Home = () => {
             </div>
             <div>
                 <div className="flex items-center justify-center lg:flex-1 lg:order-2 lg:justify-end">
-                    <img src="./assets/Blue-Shape.svg" alt="1st" className="-rotate-45 h-64 md:h-72 lg:h-[400px]" />
-                    <img src="./assets/Pink-Shape.svg" alt="2st" className="absolute -rotate-[30deg] h-64 md:h-72 lg:h-[400px]" />
+                    <img src="MyProfile.png" alt="1st" className="mt-10 h-64 md:h-72 lg:h-[400px]" />
+                    {/* <img src="./assets/Pink-Shape.svg" alt="2st" className="absolute -rotate-[30deg] h-64 md:h-72 lg:h-[400px]" />
                     <img src="./assets/Purple-Shape.svg" alt="3st" className="absolute -rotate-[15deg] h-64 md:h-72 lg:h-[400px]" />
-                    <img src="./assets/Hero-Model.png" alt="Hero" className="absolute h-64 md:h-72 lg:h-[400px]" />
+                    <img src="./assets/Hero-Model.png" alt="Hero" className="absolute h-64 md:h-72 lg:h-[400px]" /> */}
                 </div>
             </div>
         </div>
