@@ -1,7 +1,7 @@
 const Navbar = () => {
     const navigation = [
         { name: 'Home', href: '/', current: true },
-        { name: 'Experience', href: '#', current: false },
+        { name: 'Experience', href: '/experience', current: false },
         { name: 'Technology', href: '/technology', current: false },
         { name: 'Project', href: '/project', current: false },
         { name: 'Education', href: '/education', current: false },

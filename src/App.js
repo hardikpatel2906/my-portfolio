@@ -6,6 +6,7 @@ import Technology from './components/Technology';
 import Education from './components/Education';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Project from './components/Project';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/technology" element={<Technology />} />
             <Route path="/education" element={<Education />} />
             <Route path="/project" element={<Project />} />
+            <Route path="/experience" element={<Experience />} />
           </Routes>
         </div>
         {/* <Footer /> */}
