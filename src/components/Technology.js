@@ -7,11 +7,11 @@ const Technology = () => {
         },
         {
             type: "Languages",
-            technologies: ["Javascript", "Python", "HTML","CSS","SQL", "TailwindCSS"]
+            technologies: ["Javascript", "Python", "Typescript", "HTML","CSS","SQL", "TailwindCSS"]
         },
         {
             type: "Frameworks",
-            technologies: ["ReactJS", "NextJS", "NodeJS", "ExpressJS"]
+            technologies: ["ReactJS", "NextJS", "NodeJS", "ExpressJS","SailsJS"]
         },
         {
             type: "Databases",
