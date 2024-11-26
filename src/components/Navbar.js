@@ -1,10 +1,18 @@
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
+
 const Navbar = () => {
+    const [activeTab, setActiveTab] = useState("Home");
+
+
+
     const navigation = [
-        { name: 'Home', href: '/', current: true },
-        { name: 'Experience', href: '/experience', current: false },
-        { name: 'Technology', href: '/technology', current: false },
-        { name: 'Project', href: '/project', current: false },
-        { name: 'Education', href: '/education', current: false },
+        { name: "Home", href: '/' },
+        { name: 'Experience', href: '/experience' },
+        { name: 'Technology', href: '/technology' },
+        { name: 'Project', href: '/project' },
+        { name: 'Education', href: '/education' },
     ];
 
     function classNames(...classes) {
@@ -20,17 +28,24 @@ const Navbar = () => {
             <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
                     {navigation.map((item) => (
-                        <a
+                        <NavLink
+                            onClick={() => { setActiveTab(item.name) }}
                             key={item.name}
-                            href={item.href}
-                            aria-current={item.current ? 'page' : undefined}
-                            className={classNames(
-                                item.current ? 'text-[#000000] bg-[#fead8a]' : 'text-[#000000] hover:text-[#4F4A41] hover:bg-[#ff834f]',
-                                'rounded-full px-3 py-2 text-lg font-Jost',
-                            )}
+                            to={item.href}
+                            end={item.href === '/'} 
+                            // href={item.href}
+                            // aria-current={activeTab ? 'page' : undefined}
+                            className={({ isActive }) =>
+                                classNames(
+                                    isActive ?
+                                        'text-[#000000] bg-[#fead8a]' :
+                                        'text-[#000000] hover:text-[#4F4A41] hover:bg-[#fead8a]',
+                                    'rounded-full px-3 py-2 text-lg font-Jost',
+                                )}
+
                         >
                             {item.name}
-                        </a>
+                        </NavLink>
                     ))}
                 </div>
             </div>
