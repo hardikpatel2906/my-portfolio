@@ -7,6 +7,7 @@ import Education from './components/Education';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Project from './components/Project';
 import Experience from './components/Experience';
+import GetInTouch from './components/GetInTouch';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/education" element={<Education />} />
             <Route path="/project" element={<Project />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/git" element={<GetInTouch />} />
           </Routes>
         </div>
         {/* <Footer /> */}
