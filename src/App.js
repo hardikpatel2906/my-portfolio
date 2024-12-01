@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Project from './components/Project';
 import Experience from './components/Experience';
 import GetInTouch from './components/GetInTouch';
+import Resume from './components/Resume';
 
 function App() {
   return (
