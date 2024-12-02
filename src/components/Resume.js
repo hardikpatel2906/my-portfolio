@@ -15,7 +15,7 @@ const options = {
 const Resume = () => {
     return (
         <>
-            <div>
+            <div className="flex justify-center">
                 <Document file={"./Hardikkumar_patel.pdf"} options={options}>
                     <Page pageNumber={1} />
                 </Document>
