@@ -23,6 +23,7 @@ function App() {
             <Route path="/project" element={<Project />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/git" element={<GetInTouch />} />
+            <Route path="/resume" element={<Resume />} />
           </Routes>
         </div>
         {/* <Footer /> */}

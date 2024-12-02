@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
     return (
         <div class="mx-auto max-w-6xl flex justify-between">
@@ -5,9 +7,9 @@ const Home = () => {
                 <p className="mt-6 text-lg leading-8 font-semibold text-[#000000] text-justify font-Jost">Hey, I'm </p>
                 <p className="text-[#000000] text-8xl font-Jost">Hardik Patel</p>
                 <p className="mt-6 leading-snug font-semibold text-5xl text-[#000000] font-Jost text-left">A dedicated full-stack developer with a passion for crafting dynamic and efficient web applications.</p>
-                <div>
-                    <button className="bg-black rounded-full text-white p-5 font-Jost mt-10 text-lg mx-3">Get in touch</button>
-                    <button className="bg-black rounded-full text-white p-5 font-Jost mt-10 text-lg mx-3">My Resume</button>
+                <div className="mt-10">
+                    <Link className="bg-black rounded-full text-white p-5 font-Jost text-lg mx-3" to="/git">Get in touch</Link>
+                    <Link className="bg-black rounded-full text-white p-5 font-Jost text-lg mx-3" to="/resume">My Resume</Link>
                 </div>
 
             </div>
