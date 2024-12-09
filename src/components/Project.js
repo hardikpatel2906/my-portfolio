@@ -13,6 +13,9 @@ const Project = () => {
                         ))
                     }
                 </div>
+                <div className="mt-5">
+                    <a href="https://gather-gro.netlify.app"><img src="web.png" alt="web" width="40" /></a>
+                </div>
             </div>
         </>
     )
