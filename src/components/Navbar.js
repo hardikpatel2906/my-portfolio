@@ -65,7 +65,7 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
                 {menuOpen && (
-                    <div className="md:hidden flex flex-col items-center space-y-4 py-4">
+                    <div className="md:hidden flex flex-col items-center space-y-2 py-2">
                         {navigation.map((item) => (
                             <NavLink
                                 key={item.name}
@@ -77,9 +77,9 @@ const Navbar = () => {
                                 className={({ isActive }) =>
                                     classNames(
                                         isActive
-                                            ? "text-black bg-[#fead8a]"
-                                            : "text-black hover:text-[#4F4A41] hover:bg-[#fead8a]",
-                                        "rounded-full px-4 py-2 text-lg font-Jost transition-all"
+                                            ? 'border-b-2 border-[#000000] text-[#000000]'
+                                            : 'text-[#000000] hover:border-b-2 hover:border-gray-500',
+                                        'px-3 py-2 text-lg font-Jost transition duration-300 ease-in-out'
                                     )
                                 }
                             >

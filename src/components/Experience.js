@@ -97,7 +97,7 @@ const Experience = () => {
                             {/* Tech Stack */}
                             <div className="mt-4 flex flex-wrap gap-2 font-Jost">
                                 {exp.techStack.map((tech, i) => (
-                                    <span key={i} className="bg-gradient-to-r from-indigo-400 to-purple-500 px-3 py-1 text-sm text-white rounded-full">
+                                    <span key={i} className="bg-gradient-to-r from-indigo-400 to-purple-500 px-2 py-1 text-sm text-white rounded-md">
                                         {tech}
                                     </span>
                                 ))}
