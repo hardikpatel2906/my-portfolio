@@ -1,52 +1,12 @@
-// const Technology = () => {
-
-//     const techDatas = [
-//         {
-//             type: "Core",
-//             technologies: ["Full-Stack Developer", "Software Engineering", "Back-end Development","Front-end Development", "Database", "Typescript", "HTML","CSS","SQL", "TailwindCSS"]
-//         },
-//         {
-//             type: "Languages",
-//             technologies: ["Javascript", "Python", "Typescript", "HTML","CSS","SQL", "TailwindCSS"]
-//         },
-//         {
-//             type: "Frameworks",
-//             technologies: ["ReactJS", "NextJS", "NodeJS", "ExpressJS","SailsJS"]
-//         },
-//         {
-//             type: "Databases",
-//             technologies: ["MongoDB", "MySQL", "PostgreSQL", "Firebase"]
-//         }
-//     ];
-
-
-//     return (
-//         <>
-//             <div className="mx-auto max-w-6xl mt-6">
-//                 <h1 className="font-Jost text-5xl">Tools & Technology</h1>
-//                 {techDatas.map((techData) => (
-//                     <>
-//                         <p className="mt-4 font-Jost text-2xl">{techData.type}:</p>
-//                         <div className="flex flex-wrap gap-3 mt-2">
-//                             {techData.technologies.map((tech) => (<span><button className="bg-gray-700 text-white rounded-full px-4 py-2 text-lg font-Jost">{tech}</button></span>))}
-//                         </div>
-
-//                     </>
-//                 ))}
-//             </div>
-//         </>
-//     )
-// };
-// export default Technology;
-
 import { FaNodeJs, FaReact, FaDocker, FaAws, FaDatabase } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const techData = [
     {
         category: "Backend",
         icon: <FaNodeJs className="text-4xl text-green-500" />,
-        technologies: ["JavaScript","Node.js", "Express.js", "Sails.js", "Python"],
+        technologies: ["JavaScript", "Node.js", "Express.js", "Sails.js", "Python"],
     },
     {
         category: "Frontend",
@@ -65,9 +25,31 @@ const techData = [
     },
 ];
 
+const floatingIcons = [
+    { icon: <FaReact className="text-blue-300 text-8xl" />, x: "20%", y: "20%" },
+    { icon: <FaNodeJs className="text-green-300 text-6xl" />, x: "80%", y: "30%" },
+    { icon: <SiExpress className="text-green-300 text-6xl" />, x: "90%", y: "40%" },
+    { icon: <FaDatabase className="text-orange-300 text-6xl" />, x: "50%", y: "70%" },
+    { icon: <FaDocker className="text-cyan-300 text-6xl" />, x: "20%", y: "80%" },
+    { icon: <FaAws className="text-yellow-300 text-6xl" />, x: "70%", y: "90%" },
+];
+
 const Technology = () => {
     return (
         <div className="max-w-7xl mx-auto py-12 px-8">
+
+            {/* {floatingIcons.map((item, index) => (
+                <motion.div
+                    key={index}
+                    initial={{ opacity: 0.3, scale: 0.8, rotate: Math.random() * 20 }}
+                    animate={{ opacity: 0.5, scale: 1, rotate: Math.random() * -20 }}
+                    transition={{ duration: 5, repeat: Infinity, repeatType: "reverse" }}
+                    className="absolute"
+                    style={{ top: item.y, left: item.x }}
+                >
+                    {item.icon}
+                </motion.div>
+            ))} */}
             {/* Title */}
             <div className="text-center mb-12">
                 <h2 className="text-4xl font-bold font-Jost text-gray-800">Technology Stack</h2>
