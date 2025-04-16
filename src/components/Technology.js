@@ -36,41 +36,25 @@ const floatingIcons = [
 
 const Technology = () => {
     return (
-        <div className="max-w-7xl mx-auto py-12 px-8">
-
-            {/* {floatingIcons.map((item, index) => (
-                <motion.div
-                    key={index}
-                    initial={{ opacity: 0.3, scale: 0.8, rotate: Math.random() * 20 }}
-                    animate={{ opacity: 0.5, scale: 1, rotate: Math.random() * -20 }}
-                    transition={{ duration: 5, repeat: Infinity, repeatType: "reverse" }}
-                    className="absolute"
-                    style={{ top: item.y, left: item.x }}
-                >
-                    {item.icon}
-                </motion.div>
-            ))} */}
-            {/* Title */}
-            <div className="text-center mb-12">
+        <div className="max-w-7xl mx-auto py-12 px-6">
+            {/* <div className="text-center mb-12">
                 <h2 className="text-4xl font-bold font-Jost text-gray-800">Technology Stack</h2>
                 <p className="text-lg text-gray-600 mt-2">
                     The technologies I use for building web applications and scalable solutions.
                 </p>
-            </div>
-
+            </div> */}
+            <h1 className="font-Jost text-5xl text-center">Technology Stack</h1>
+            <p className="text-lg text-gray-600 mt-2 text-center font-Jost">
+                The technologies I use for building web applications and scalable solutions.
+            </p>
             {/* Tree Structure */}
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mt-8">
                 {techData.map((tech, index) => (
                     <motion.div
                         key={index}
                         whileHover={{ scale: 1.05 }}
                         className="relative flex items-center space-x-6 bg-gradient-to-r from-gray-50 to-gray-100 shadow-lg rounded-lg px-6 py-4 w-3/4 my-4"
                     >
-                        {/* Vertical Line Connector */}
-                        {/* {index !== techData.length - 1 && (
-                            <div className="absolute left-6 w-1 h-16 bg-gray-400 top-full"></div>
-                        )} */}
-
                         {/* Icon */}
                         <div className="p-3 bg-gray-200 rounded-full">{tech.icon}</div>
 
@@ -97,4 +81,3 @@ const Technology = () => {
 };
 
 export default Technology;
-

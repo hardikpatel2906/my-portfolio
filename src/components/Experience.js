@@ -27,18 +27,18 @@ const experiences = [
             "Implemented CI/CD pipelines for faster deployment.",
             "Collaborated with frontend developers to enhance user experience.",
         ],
-        techStack: ["Node.js", "Express", "PostgreSQL", "Docker"],
+        techStack: ["Node.js", "Express", "PostgreSQL", "Docker", "MongoDB", "MySQL"],
     },
 ];
 
 const Experience = () => {
     return (
         <div className="max-w-5xl mx-auto px-6 py-12">
-            <h2 className="text-5xl font-bold text-center mb-12 font-Jost text-gray-900">
+            {/* <h2 className="text-5xl font-bold text-center mb-12 font-Jost text-gray-900">
                 Experience
-            </h2>
-
-            <div className="relative border-l-4 border-gray-300">
+            </h2> */}
+            <h1 className="font-Jost text-5xl text-center">Experience</h1>
+            <div className="relative border-l-4 border-gray-300 mt-8">
                 {experiences.map((exp, index) => (
                     <motion.div
                         key={exp.id} font-Jost
@@ -68,7 +68,7 @@ const Experience = () => {
                             {/* Tech Stack */}
                             <div className="mt-4 flex flex-wrap gap-2 font-Jost">
                                 {exp.techStack.map((tech, i) => (
-                                    <span key={i} className="bg-gradient-to-r from-indigo-400 to-purple-500 px-2 py-1 text-sm text-white rounded-md">
+                                    <span key={i} className="bg-white px-4 py-1 rounded-lg shadow font-Jost text-gray-800 inline-block m-1">
                                         {tech}
                                     </span>
                                 ))}
