@@ -55,8 +55,12 @@ const projects = [
 const Project = () => {
     return (
         <div className="max-w-7xl mx-auto py-12 px-6">
+            <h1 className="font-Jost text-5xl text-center">Projects</h1>
+            <p className="text-lg text-gray-600 mt-2 text-center font-Jost">
+                Some of the projects I have built and contributed to.
+            </p>
             {/* Section Title */}
-            <motion.div
+            {/* <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -64,10 +68,10 @@ const Project = () => {
             >
                 <h2 className="text-4xl font-bold text-gray-800">Projects</h2>
                 <p className="text-lg text-gray-600 mt-2">Some of the projects I have built and contributed to.</p>
-            </motion.div>
+            </motion.div> */}
 
             {/* Project List */}
-            <div className="space-y-16">
+            <div className="space-y-16 mt-8">
                 {projects.map((project, index) => (
                     <motion.div
                         key={index}

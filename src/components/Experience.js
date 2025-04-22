@@ -49,8 +49,8 @@ const Experience = () => {
                         className="mb-10 ml-6 relative"
                     >
                         {/* Timeline Dot */}
-                        <div className="absolute -left-4 top-3 w-10 h-10 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center shadow-lg">
-                            <img src={exp.logo} alt={exp.company} className="w-6 h-6 rounded-full" />
+                        <div className="absolute -left-4 top-3 w-10 h-2 bg-[#4A90E2] flex items-center justify-center shadow-lg">
+                            {/* <img src={exp.logo} alt={exp.company} className="w-6 h-6 rounded-full" /> */}
                         </div>
 
                         {/* Experience Card */}
@@ -68,7 +68,7 @@ const Experience = () => {
                             {/* Tech Stack */}
                             <div className="mt-4 flex flex-wrap gap-2 font-Jost">
                                 {exp.techStack.map((tech, i) => (
-                                    <span key={i} className="bg-white px-4 py-1 rounded-lg shadow font-Jost text-gray-800 inline-block m-1">
+                                    <span key={i} className="bg-white px-4 py-1 rounded-md shadow font-Jost text-gray-800 inline-block m-1">
                                         {tech}
                                     </span>
                                 ))}
