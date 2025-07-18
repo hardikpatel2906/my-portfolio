@@ -37,7 +37,7 @@ const Experience = () => {
             {/* <h2 className="text-5xl font-bold text-center mb-12 font-Jost text-gray-900">
                 Experience
             </h2> */}
-            <h1 className="font-Jost text-5xl text-center">Experience</h1>
+            <h1 className="font-Jost text-5xl text-center">Professional Experience</h1>
             <div className="relative border-l-4 border-gray-300 mt-8">
                 {experiences.map((exp, index) => (
                     <motion.div
